@@ -1,8 +1,7 @@
 
 
-# Portfólio Olá, Bem vindo ao meu codificador.
+# Challenge - 1 | Olá, Bem vindo ao meu codificador.
 
-![image](https://avatars.githubusercontent.com/u/94324791?v=4)
 
 ## Ferramentas utilizadas:
 
