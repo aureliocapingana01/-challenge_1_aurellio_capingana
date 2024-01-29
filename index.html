@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="shortcut icon" href="/assets/favicon/favicon-16x16.png" type="image/x-icon">
     <title>Challenge_1 - Acapingana</title>
+    <script src="assets/js/codificador.js"></script>
 </head>
 <body>
     <div class="container">
@@ -23,18 +25,24 @@
                     </div>
                 </div>
                 <div class="botao-descriptografado">
-                    <button>Criptografar</button>
+                    <button onclick="criptografarTexto()" >Criptografar</button>
                     <button>Descriptografar</button>
                 </div>
             </section>
             <section class="texto-criptografado">
                 <div id="criptografado">
+                    <div class="criptografa-texto">
+
+                    </div>
                     <p id="cripto">
                         Nenhuma mensagem encontrada <br>
                        Digite um texto que você deseja criptografar ou descriptografar
                     </p>
                 </div>
-                <button id="copiar-cripto">copiar</button>
+                <div id="botao-criptografado">
+                    <button id="copiar-cripto">copiar</button>
+                    <button id="limpar-cripto">limpar</button>
+                </div>
             </section>
         </main>
         <footer class="rodape">

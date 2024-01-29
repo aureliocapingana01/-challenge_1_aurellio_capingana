@@ -66,6 +66,7 @@ main .texto-criptografado #criptografado {
 main .user-texto textarea {
     width: 100%;
     height: 130px;
+    font-size: 20px;
     resize: none;
     outline: none;
     border-radius: 5px;
@@ -74,14 +75,15 @@ main .user-texto textarea {
 main .user-texto #obs {
     display: flex;
 }
-main .botao-descriptografado {
+main .texto-descriptografado .botao-descriptografado ,
+main .texto-criptografado #botao-criptografado  {
     display: flex;
     /* flex: 1; */
     flex-direction: column;
     justify-content: space-between;
 }
-main .botao-descriptografado button,
-main .texto-criptografado button {
+main .texto-descriptografado .botao-descriptografado button,
+main .texto-criptografado #botao-criptografado button {
     width: 200px;
     height: 50px;
     padding: 10px 50px;
@@ -93,8 +95,8 @@ main .texto-criptografado button {
     font-size: 16px;
     text-align: center;
 }
-main .botao-descriptografado button:hover,
-main .texto-criptografado button:hover {
+main .texto-descriptografado .botao-descriptografado button:hover,
+main .texto-criptografado #botao-criptografado button:hover {
     background-color: var(--corTertiary);
     color: var(--corPrimary);
 }
@@ -103,13 +105,15 @@ main .texto-criptografado {
     padding: 2rem;
     width: 100%;
     gap: 2rem;
-    align-items: center;
+    /* align-items: center; */
 }
 main .texto-criptografado #criptografado {
+    display: flex;
     width: 100%;
     height: 130px;
     padding: 1rem;
     border-radius: 5px;
+    font-size: 20px;
     border: 0.5px solid var(--corSecundary);
 }
 .rodape {
