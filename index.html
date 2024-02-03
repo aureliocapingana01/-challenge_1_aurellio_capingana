@@ -6,16 +6,18 @@
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="shortcut icon" href="/assets/favicon/favicon-16x16.png" type="image/x-icon">
     <title>Challenge_1 - Acapingana</title>
-    <script src="assets/js/codificador.js"></script>
+    <!-- <script src="assets/js/codificador.js" defer></script> -->
 </head>
 <body>
     <div class="container">
-        <header></header>
+        <header>
+            
+        </header>
         <main>
             <section class="texto-descriptografado">
                 <div class="user-texto">
                     <label for="texto">
-                        <textarea name="" id="textarea" cols="30" rows="10"
+                        <textarea name="" id="criptografar" cols="30" rows="10"
                          placeholder="Digite aqui o seu texto">
                         </textarea>
                     </label>
@@ -25,26 +27,29 @@
                     </div>
                 </div>
                 <div class="botao-descriptografado">
-                    <button onclick="criptografarTexto()" >Criptografar</button>
-                    <button>Descriptografar</button>
+                    <button onclick="criptografar()">Criptografar</button>
                 </div>
-            </section>
-            <section class="texto-criptografado">
-                <div id="criptografado">
-                    <div class="criptografa-texto">
 
-                    </div>
-                    <p id="cripto">
-                        Nenhuma mensagem encontrada <br>
-                       Digite um texto que você deseja criptografar ou descriptografar
-                    </p>
-                </div>
-                <div id="botao-criptografado">
-                    <button id="copiar-cripto">copiar</button>
-                    <button id="limpar-cripto">limpar</button>
-                </div>
             </section>
+
+            <section class="texto-criptografado">
+               <div class="texto">
+                <textarea name="" id="descriptografar" cols="30" rows="10">
+
+                </textarea>
+                <p id="info">
+                    Aqui aparecerá os dados Criptografado
+                </p>
+               </div>
+               <div class="botao-criptografado">
+                <button onclick="descriptografar()">Descriptografar</button>
+            </div>
+            </section>
+
+            <button class="copiar" onclick="copiarTexto()">Copiar</button>
+
         </main>
+
         <footer class="rodape">
             <div class="rede-socias">
                 <img src="assets/img/github.png" alt="">
@@ -56,5 +61,7 @@
             </p>
         </footer>
     </div>
+
+    <script src="assets/js/app.js"></script>
 </body>
 </html>
