@@ -173,18 +173,37 @@ main .texto-criptografado .texto {
   main .texto-descriptografado,
   main .texto-criptografado {
     flex-direction: column;
+    gap: 10px;
   }
+  /* main .texto-descriptografado .botao-descriptografado button,
+main .texto-criptografado .botao-criptografado button,
+main .copiar button {
+  width: 200px;
+  height: 40px;
+  padding: 5px 30px;
+  font-size: 14px;
+} */
+  main .user-texto textarea,
+main .texto textarea {
+  height: 90px;
+  font-size: 18px;
+  padding: 10px;
+}
   main .texto-descriptografado .botao-descriptografado,
   main .texto-criptografado .botao-criptografado {
     display: flex;
     align-items: center;
   }
   main .texto-descriptografado .botao-descriptografado button,
-  main .texto-criptografado .botao-criptografado button {
+  main .texto-criptografado .botao-criptografado button,
+  main .copiar button {
     width: 100%;
+        height: 40px;
+        padding: 5px 30px;
+        font-size: 14px;
   }
    main .texto-criptografado {
-    padding: 5rem 0 2rem 0 ;
+    padding: 12px 0 ;
    
   } 
   main .texto-criptografado .texto {
