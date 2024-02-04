@@ -1,67 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="shortcut icon" href="/assets/favicon/favicon-16x16.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="/assets/favicon/favicon-16x16.png"
+      type="image/x-icon"
+    />
     <title>Challenge_1 - Acapingana</title>
-    <!-- <script src="assets/js/codificador.js" defer></script> -->
-</head>
-<body>
+
+  </head>
+  <body>
     <div class="container">
-        <header>
-            
-        </header>
-        <main>
-            <section class="texto-descriptografado">
-                <div class="user-texto">
-                    <label for="texto">
-                        <textarea name="" id="criptografar" cols="30" rows="10"
-                         placeholder="Digite aqui o seu texto">
-                        </textarea>
-                    </label>
-                    <div id="obs">
-                        <img src="assets/img/obs.png" alt="um ponto de observação">
-                        <p>Apenas letras minúsculas e sem acento.</p>
-                    </div>
-                </div>
-                <div class="botao-descriptografado">
-                    <button onclick="criptografar()">Criptografar</button>
-                </div>
-
-            </section>
-
-            <section class="texto-criptografado">
-               <div class="texto">
-                <textarea name="" id="descriptografar" cols="30" rows="10">
-
-                </textarea>
-                <p id="info">
-                    Aqui aparecerá os dados Criptografado
-                </p>
-               </div>
-               <div class="botao-criptografado">
-                <button onclick="descriptografar()">Descriptografar</button>
+      <header></header>
+      <main>
+        <section class="texto-descriptografado">
+          <div class="user-texto">
+            <label for="texto">
+              <textarea
+                name=""
+                id="criptografar"
+                cols="30"
+                rows="10"
+                placeholder="Digite aqui o seu texto"
+              >
+              </textarea>
+            </label>
+            <div id="obs">
+              <img src="assets/img/obs.png" alt="um ponto de observação" />
+              <p>Apenas letras minúsculas e sem acento.</p>
             </div>
-            </section>
+          </div>
+          <div class="botao-descriptografado">
+            <button onclick="criptografar()">Criptografar</button>
+          </div>
+        </section>
 
-            <button class="copiar" onclick="copiarTexto()">Copiar</button>
+        <section class="texto-criptografado">
+          <div class="texto">
+            <textarea name="" id="descriptografar" cols="30" rows="10">
+            </textarea>
+            <p id="info">Aqui aparecerá os dados Criptografado</p>
+          </div>
+          <div class="botao-criptografado">
+            <button onclick="descriptografar()">Descriptografar</button>
+          </div>
+        </section>
 
-        </main>
+        <button class="copiar" onclick="copiarTexto()">Copiar</button>
+      </main>
 
-        <footer class="rodape">
-            <div class="rede-socias">
-                <img src="assets/img/github.png" alt="">
-                <img src="assets/img/linkedin.png" alt="">
-                <img src="assets/img/instagram.png" alt="">
-            </div>
-            <p>
-                Criado por Aurélio Capingana - Challenge_1 | Curso - ONE
-            </p>
-        </footer>
+      <footer class="rodape">
+        <div class="rede-socias">
+          <a href="https://github.com/aureliocapingana01" target="_blank">
+            <img src="assets/img/github.png" alt="" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/aur%C3%A9lio-capingana-6777691b6/"
+            target="_blank"
+          >
+            <img src="assets/img/linkedin.png" alt="" />
+          </a>
+          <a href="https://www.instagram.com/?theme=dark" target="_blank">
+            <img src="assets/img/instagram.png" alt="" />
+          </a>
+        </div>
+        <p>Criado por Aurélio Capingana <br> Challenge_1 | Curso - ONE</p>
+      </footer>
     </div>
 
     <script src="assets/js/app.js"></script>
-</body>
+  </body>
 </html>

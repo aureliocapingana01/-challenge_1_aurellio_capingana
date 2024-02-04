@@ -1,160 +1,217 @@
 @charset "UTF-8";
- 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
 :root {
-    --corPrimary : #E5E5CB;
-    --corSecundary : #D5CEA3;
-    --corTertiary : #3C2A21;
-    --corHover : #1A120B;
+  --corPrimary: #e5e5cb;
+  --corSecundary: #d5cea3;
+  --corTertiary: #3c2a21;
+  --corHover: #1a120b;
 
-     --font: "Inter", sans-serif;    
+  --font: "Inter", sans-serif;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 html {
-    height: 100%;
-    min-height: 100%;
+  height: 100%;
+  min-height: 100%;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-    font-family: var(--font);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: var(--font);
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    height: 100vh;
-    margin: auto;
-    box-shadow: 2px 1px 1px var(--corTertiary);
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 100vh;
+  padding: 1rem 2rem;
+  margin: auto;
+  box-shadow: 2px 1px 1px var(--corTertiary);
 }
 header {
-    width: 5rem;
-    height: 80px;
-    background-image: url('../img/logo.png');
-    background-repeat: no-repeat;
-    margin: 0.4rem 1rem;
+  width: 5rem;
+  height: 80px;
+  background-image: url("../img/logo.png");
+  background-repeat: no-repeat;
+  margin: 0.4rem 1rem;
 }
 main {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 main .texto-descriptografado {
-    display: flex;
-    flex: 1;
-    flex-direction: row-reverse;
-    padding: 2rem;
-    width: 100%;
-    gap: 2rem;
+  display: flex;
+  flex: 1;
+  flex-direction: row-reverse;
+  width: 100%;
+  gap: 2rem;
 }
 main .texto-descriptografado .user-texto,
 main .texto-criptografado .texto {
-    display: flex;
-    height: 150px;
-    flex-direction: column;
-    flex: 1;
-
+  display: flex;
+  height: 150px;
+  flex-direction: column;
+  flex: 1;
 }
-main .user-texto textarea, 
-main .texto textarea{
-    width: 100%;
-    height: 130px;
-    font-size: 20px;
-    resize: none;
-    outline: none;
-    border-radius: 5px;
-    padding: 1rem;
+main .user-texto textarea,
+main .texto textarea {
+  width: 100%;
+  height: 130px;
+  font-size: 20px;
+  resize: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 1rem;
 }
-main .user-texto textarea:focus, 
+main .user-texto textarea:focus,
 main .texto textarea:focus {
-    outline: none;
+  outline: none;
 }
-main .user-texto #obs, 
+main .user-texto #obs,
 main .texto p {
-    display: flex;
+  display: flex;
 }
-/* main .texto-descriptografado .botao-descriptografado  {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-} */
 main .texto-descriptografado .botao-descriptografado,
 main .texto-criptografado .botao-criptografado {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 main .texto-descriptografado .botao-descriptografado button,
 main .texto-criptografado .botao-criptografado button {
-    width: 250px;
-    height: 50px;
-    padding: 10px 50px;
-    background-color: var(--corSecundary);
-    color: var(--corPrimary);
-    border-radius: 5px;
-    color: var(--corHover);
-    font-weight: 600;
-    font-size: 16px;
-    text-align: center;
-    border: none;
-    text-transform: uppercase;
-    transition: 0.3s;
-    /* align-items: center; */
-
+  width: 250px;
+  height: 50px;
+  padding: 10px 50px;
+  background-color: var(--corSecundary);
+  color: var(--corPrimary);
+  border-radius: 5px;
+  color: var(--corHover);
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  border: none;
+  text-transform: uppercase;
+  transition: 0.3s;
 }
 main .copiar {
-    width: 100%;
-    height: 50px;
-    padding: 10px 50px;
-    border: none;
-    background-color: var(--corSecundary);
-    color: var(--corPrimary);
-    border-radius: 5px;
-    color: var(--corHover);
-    font-weight: 600;
-    font-size: 16px;
-    text-align: center;
-    text-transform: uppercase;
-    transition: 0.3s;
-
+  width: 100%;
+  height: 50px;
+  padding: 10px 50px;
+  border: none;
+  background-color: var(--corSecundary);
+  color: var(--corPrimary);
+  border-radius: 5px;
+  color: var(--corHover);
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.3s;
 }
 main .texto-descriptografado .botao-descriptografado button:hover,
 main .texto-criptografado .botao-criptografado button:hover,
 main .copiar:hover {
-    background-color: var(--corTertiary);
-    color: var(--corPrimary);
-    transition: 0.3s;
+  background-color: var(--corTertiary);
+  color: var(--corPrimary);
+  transition: 0.3s;
 }
 main .texto-criptografado {
-    display: flex;
-    flex: 1;
-    padding: 2rem;
-    width: 100%;
-    gap: 2rem; 
+  display: flex;
+  flex: 1;
+  /* padding: 2rem 0 ; */
+  padding: 2rem 0;
+  width: 100%;
+  gap: 2rem;
 }
 main .texto-criptografado .texto {
-    gap: 5px;
+  gap: 5px;
 }
 .rodape {
-    margin-top: auto;
-    display: flex;
-    border-top: 1px solid var(--corSecundary);
-    padding: 1rem;
-    justify-content: space-around;
-    color: var(--corHover);
-    align-items: center;
-    font-size: 14;
-    font-weight: 500;
-
+  margin-top: auto;
+  display: flex;
+  /* width: 100%; */
+  border-top: 1px solid var(--corSecundary);
+  padding: 1rem 0;
+  justify-content: space-around;
+  color: var(--corHover);
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  gap: 20px;
 }
 .rodape .rede-socias {
+  display: flex;
+  gap: 20px;
+}
+
+
+
+
+
+
+/* Estilo para celular */
+@media (min-width: 480px) and (max-width: 599px) {
+  body {
     display: flex;
-    gap: 20px;
+    flex-direction: column;
+    min-height: 100%;
+    font-family: var(--font);
+  }
+
+  .container {
+    width: 100%;
+    box-shadow: 2px 1px 1px var(--corTertiary);
+  }
+  main .texto-descriptografado,
+  main .texto-criptografado {
+    flex-direction: column;
+  }
+  main .texto-descriptografado .botao-descriptografado,
+  main .texto-criptografado .botao-criptografado {
+    display: flex;
+    align-items: center;
+  }
+  main .texto-descriptografado .botao-descriptografado button,
+  main .texto-criptografado .botao-criptografado button {
+    width: 100%;
+  }
+   main .texto-criptografado {
+    padding: 5rem 0 2rem 0 ;
+   
+  } 
+  main .texto-criptografado .texto {
+    gap: 5px;
+  }
+  .rodape {
+    font-size: 12px;
+    gap: 5px;
+  }
+  .rodape .rede-socias {
+    gap: 8px;
+  }
+}
+
+
+
+/* Estilo para tablet */
+@media (min-width: 600px) and (max-width: 850px) {
+
+      .container {
+        width: 100%;
+      }
+      main .texto-descriptografado,
+      main .texto-criptografado {
+        flex-direction: row-reverse;
+      }
+      .rodape {
+        font-size: 16px;
+      }
 }
