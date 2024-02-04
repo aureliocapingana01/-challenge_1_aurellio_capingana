@@ -158,7 +158,7 @@ main .texto-criptografado .texto {
 
 
 /* Estilo para celular */
-@media (min-width: 380px) and (max-width: 599px) {
+@media (min-width: 350px) and (max-width: 599px) {
   body {
     display: flex;
     flex-direction: column;
