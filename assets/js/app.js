@@ -30,9 +30,9 @@ const descriptografar = () => {
   let descriptografaTexto = document.querySelector('#descriptografar').value;
 
   descriptografado = descriptografaTexto
-  .replace('ai', 'a')
   .replace('enter', 'e')
-  .replace('iimes', 'i')
+  .replace('imes', 'i')
+  .replace('ai', 'a')
   .replace('ober', 'o')
   .replace('ufat', 'u')
 
